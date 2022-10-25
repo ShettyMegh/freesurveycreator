@@ -114,6 +114,13 @@ p{
     gap: 3rem 5rem;
 }
 
+@media only screen and (min-width:920px){
+    .subheading{
+        font-size: 2rem;
+    }
+}
+
+
 /* 
 ================
 navbar
@@ -492,4 +499,93 @@ why
         grid-template-columns: repeat(3,1fr);
         grid-template-rows: 1fr 1fr;
     }
+
+    .why-info{
+        margin-bottom: 8rem;
+    }
+    
 }
+
+
+
+/* 
+================
+usecases
+================
+*/
+
+.usecases-container{
+    max-width: var(--max-width);
+    margin: 8rem auto;
+    text-align: center;
+    padding: 2rem;
+}
+
+.usecases-info{
+    margin-bottom: 2rem;
+}
+
+.usecases-info .subheading{
+    margin-bottom: 2rem;
+}
+
+
+.usecases-list{
+    color:var(--grey-100);
+    display: grid;
+    gap:3px;
+}
+
+.usecases-item{
+    background-color: var(--primary-500);
+    padding: 3rem 1rem;
+}
+
+.usecases-item h3, .usecases-item p, .usecases-item i{
+    padding-bottom: 1rem;
+}
+
+.usecases-item h3, .usecases i{
+    color: white;
+}
+
+.usecases-item i{
+    font-size: 2.5rem;
+}
+
+@media only screen and (min-width:920px){
+    .usecases-info{
+        padding: auto 4rem;
+    }
+    .usecases-list{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .usecases-item{
+        padding: 4rem 2rem;
+    }
+}
+
+
+/* 
+================
+benefits
+================
+*/
+
+.benefits-container{
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.benefits-container h3{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.benefits-list{
+    display: grid;
+    gap: 2rem 4rem;
+}
+
