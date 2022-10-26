@@ -755,6 +755,9 @@ who
  
 
 @media only screen and (min-width:920px){
+    .who-container{
+        max-width: 70vw;
+    }
     .who-list{
         text-align: left;
         grid-template-columns: 1fr;
@@ -784,7 +787,7 @@ who
 
     .who-icon i{
         margin: 0 auto;
-        padding:  0 4rem;
+        padding:  0;
     }
 
     
@@ -818,6 +821,7 @@ competitors
 
 .competitors-list{
     display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 5rem 3rem;
 }
 
@@ -1060,7 +1064,7 @@ mini banner
 
     .mini_banner-container .triangle{
         width: 500px;
-        right: -200px;
+        right: -250px;
     
     }
 
@@ -1093,6 +1097,10 @@ footer
     color: black;
 }
 
+.footer-container li{
+    cursor: pointer;
+}
+
 .footer-container ul{
     list-style: none;
     font-size: 0.6rem;
@@ -1115,7 +1123,7 @@ footer
 .footer-item:last-child i{
     cursor: pointer;
     font-size:1.3rem;
-    color: var(--grey-500);
+    color: rgb(178, 226, 245);
 }
 
 @media only screen and (min-width:950px){
@@ -1141,6 +1149,5 @@ footer
     .footer-item:last-child i{
         font-size:2rem;
         margin-right: 0.6rem;
-        color: var(--grey-500);
     }
 }
