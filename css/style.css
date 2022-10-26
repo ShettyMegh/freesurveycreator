@@ -11,6 +11,7 @@ body{
     font-family: var(--font);
     background-color: white;
     color: var(--grey-800);
+    overflow-x: hidden;
 }
 
 /* utilities */
@@ -89,6 +90,12 @@ a{
 .btn-dark{
     background-color: var(--grey-900);
     color: white;
+    border: 1px solid transparent;
+}
+
+.btn-dark-outline{
+    border: 1px solid black;
+    background-color: transparent;
 }
 
 
@@ -937,4 +944,124 @@ feedback
         margin-bottom: 0.5rem;
     }
     
+}
+
+/* 
+================
+mini banner
+================
+*/
+
+.mini_banner{
+    background-color: var(--grey-100);
+}
+
+.mini_banner-container{
+    display: grid;
+    grid-template-columns: 40% 2fr 1fr;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 1rem;
+    position: relative;
+    background-color: var(--grey-100);
+}
+
+.mini_banner-container img{
+    position: absolute;
+    width: 60px;
+    left: 40px;
+    top:-10px;
+}
+
+.mini_banner-try{
+    position: relative;
+    z-index: 100;
+    margin: 0 auto;
+    font-size: 0.6rem;
+    width: 100%;
+}
+
+.mini_banner-container .mini_banner-try p{
+    line-height: 1rem;
+}
+
+.mini_banner-btn-container{
+    display: flex;
+    gap:10px;
+}
+
+.mini_banner-btn{
+    font-size: 0.2rem !important;
+    padding: 0.3rem;
+    border-radius: 5px;
+}
+
+.mini_banner-container .triangle{
+    display: block;
+    height: 100%;
+    width: 120px;
+    background-color: var(--grey-200);
+    position: absolute;
+    right: -25px;
+    transform: skewx(-25deg);
+
+}
+
+@media only screen and (min-width:550px){
+    .mini_banner-try{
+        font-size:1.5rem;
+        padding: 1rem 0;
+    }
+
+    .mini_banner-container .mini_banner-try p{
+        line-height: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .mini_banner-container img{
+        position: absolute;
+        width: 150px;
+        left: 40px;
+        top:-30px;
+    }
+
+
+    .mini_banner-container .triangle{
+        width: 300px;
+    
+    }
+
+    .mini_banner-btn{
+        font-size: 1rem !important;
+        padding: 1rem;
+        border-radius: 5px;
+    }
+    
+}
+
+@media only screen and (min-width:920px){
+
+    .mini_banner-container{
+    }
+    .mini_banner-container img{
+        width: 280px;
+        top: -100px;
+    }
+
+    .mini_banner-try{
+        margin: 3rem;
+        font-size: 2rem;
+    }
+
+    .mini_banner-container .mini_banner-try p{
+        line-height: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .mini_banner-container .triangle{
+        width: 500px;
+        right: -200px;
+    
+    }
+
 }
