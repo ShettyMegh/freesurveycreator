@@ -577,15 +577,40 @@ benefits
     max-width: var(--max-width);
     margin: 0 auto;
     padding: 0 2rem;
+    padding-bottom: 8rem;
 }
 
-.benefits-container h3{
+.benefits-container h2{
     text-align: center;
     margin-bottom: 2rem;
 }
 
 .benefits-list{
     display: grid;
-    gap: 2rem 4rem;
+    gap: 2rem 8rem;
 }
 
+.benefit{
+    display: flex;
+    gap:1rem;
+}
+
+.benefit .benefit-count{
+    font-size: 2rem;
+}
+
+.benefit-desc h4{
+    color: black;
+    font-weight: 900;
+}
+
+.benefit-desc p{
+    font-size:0.9rem;
+    color: var(--grey-700);
+}
+
+@media only screen and (min-width:720px){
+    .benefits-list{
+        grid-template-columns: 1fr 1fr;
+    }
+}
